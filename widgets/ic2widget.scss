@@ -1,0 +1,34 @@
+@import '../styles/variables';
+
+.widget.status_warning {
+	background-color: $status_warning !important;
+}
+
+.widget.status_404 {
+	background-color: $status_404 !important;
+}
+
+.widget.treis {
+	background-color: $treis_bg;
+}
+
+.widget.tmp {
+	background-color: $tmp_bg;
+}
+
+.widget.ssdf {
+	background-color: $ssdf_bg;
+}
+
+.widget.congestion {
+	background-color: $conditions_bg;
+}
+
+.widget.signs {
+	background-color: $signs_bg;
+}
+
+.widget.cameras {
+	background-color: $camera_bg;
+}
+

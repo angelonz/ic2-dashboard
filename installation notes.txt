@@ -1,0 +1,9 @@
+handsome github page
+	https://github.com/davefp/handsome#handsome-dashboard-framework
+
+D:/Users/<home dir>/.npmrc
+	proxy=http://<username>:<password>@wellington.proxy.g06.fujitsu.local:8080/
+	https-proxy=http://<username>:<password>@wellington.proxy.g06.fujitsu.local:8080
+
+redis installer
+	https://github.com/MSOpenTech/redis/releases
