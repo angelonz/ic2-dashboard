@@ -10,7 +10,7 @@ const assign = require('lodash/assign');
 const agent = new HttpsProxyAgent(proxy);
 
 
-const baseOptions = {
+let baseOptions = {
 	headers: ic2Header
 };
 
