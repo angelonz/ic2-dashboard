@@ -70,7 +70,7 @@ function update_widget(name, data, next_time) {
             }
 
 
-            if (data.stateCycleCount === 3) {
+            if (data.stateCycleCount > 3) {
               console.log('in 500 3 times.  sending email...');
 
               // setup email data with unicode symbols

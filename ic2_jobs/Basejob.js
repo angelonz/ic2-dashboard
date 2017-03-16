@@ -3,7 +3,8 @@ const HttpsProxyAgent = require('https-proxy-agent');
 const {proxy} = require('../configuration/env-config');
 const {ic2Header} = require('../configuration/feeds-config');
 
-const moment = require('moment');
+//const moment = require('moment');
+const moment = require('moment-timezone');
 const assign = require('lodash/assign');
 
 const agent = new HttpsProxyAgent(proxy);
@@ -38,7 +39,7 @@ function Basejob(params) {
 				// ex data = { treis: {status: 200, time: 'Wednesday, November 9, 2016 10:33 AM'}}
 				data[combinedOptions.name] = {
 		      			status: response.statusCode,
-		      			time: moment().format('llll')
+		      			time: moment().tz('Pacific/Auckland').format('llll')
 		      		};
 
 		      	// all good, resolve the promise	
