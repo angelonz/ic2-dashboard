@@ -10,14 +10,18 @@ const agent = new HttpsProxyAgent(proxy);
 
 
 const baseOptions = {
-	headers: ic2Header,
-	agent: agent
+	headers: ic2Header
 };
+
 
 
 function Basejob(params) {
 
 	const options = params || {};
+
+	if (process.env.NODE_ENV !== 'production') {
+		baseOptions = assign({}, baseOptions, {agent: agent});
+	}
 
 	// create a new object containing the baseOptions value and the passed-in options object
 	let combinedOptions = assign({}, baseOptions, options);
