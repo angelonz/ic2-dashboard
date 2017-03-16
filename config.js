@@ -12,9 +12,10 @@ exports.getRedisClient = function() {
   if (process.env.NODE_ENV === 'production') {
     options = {
       auth_pass: config.redis_server_password, 
-      ssl: true,
-      abortConnect: false
-    }
+      tls: {
+        servername: config.redis_server_host
+      }
+    };
   } else {
     options = {
       password: config.redis_server_password
