@@ -7,9 +7,19 @@ var config = {
 };
 
 exports.getRedisClient = function() {
-  var options = {
+  
+  var options = {};
+  if (process.env.NODE_ENV === 'production') {
+    options = {
+      auth_pass: config.redis_server_password, 
+      ssl: true,
+      abortConnect: false
+    }
+  } else {
+    options = {
       password: config.redis_server_password
-  };
+    };
+  }
 
   return redis.createClient(config.redis_server_port, config.redis_server_host, options);
 };
