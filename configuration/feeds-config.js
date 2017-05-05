@@ -31,8 +31,8 @@ const config = {
 		name: 'signs'
 	},
 	ic2Header: {
-		username: 'AngeloAIC2',
-		password: 'Fujitsu123'
+		username: process.env.API_USER,
+		password: process.env.API_PASSWORD
 	}
 };
 
