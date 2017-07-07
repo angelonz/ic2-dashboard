@@ -5,7 +5,7 @@
   "main": "app.js",
   "engines" : {"node" : "8.0.0"},
   "scripts": {
-    "start": "node app.js",
+    "start": "build",
     "mock": "node app.js MOCK",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "set NODE_ENV=production && node app.js"
