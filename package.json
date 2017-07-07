@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A handsome dashboard framework written in javascript",
   "main": "app.js",
-  "engines" : {"node" : "8.0.0"},
+  "engines" : {"node" : "6.9.1"},
   "scripts": {
     "start": "node app.js",
     "mock": "node app.js MOCK",

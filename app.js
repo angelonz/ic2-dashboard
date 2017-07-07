@@ -14,7 +14,7 @@ app.set('view engine', 'hbs');
 app.set('port', (process.env.PORT || 3000));
 
 app.get('/', function (req, res) {
-  res.render('index', {name: 'ic2'});
+  res.render('index', {name: 'index'});
 });
 
 app.get('/:dashboard', function(req, res) {
