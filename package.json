@@ -5,8 +5,9 @@
   "main": "app.js",
   "engines" : {"node" : "8.0.0"},
   "scripts": {
-    "start": "build",
+    "start": "node app.js",
     "mock": "node app.js MOCK",
+    "postinstall": "webpack -p --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "set NODE_ENV=production && node app.js"
   },
