@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node app.js",
     "mock": "node app.js MOCK",
-    //"postinstall": "webpack -p --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "set NODE_ENV=production && node app.js"
   },
